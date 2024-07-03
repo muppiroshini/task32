@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        body{
+         justify-content: center;
+         align-items: center;
+         background-color: lightcyan;
+        }
+        .google {
+        display: flex;
+        align-items: center;
+        height: 80vh;
+        justify-content: center;
+        }
+        .b1{
+        width: 20px;
+        height: 20px;
+        background-color:blue;
+        border-radius: 50%;
+        animation: wave 0.22s 2s 4 alternate;
+        transition-timing-function: ease-in;
+        }
+        .b2{
+        width: 20px;
+        height: 20px;
+        background-color:red;
+        border-radius: 50%;
+        animation: wave 0.24s 2s 4 alternate;
+        transition-timing-function: ease-in;
+        }
+        .b3{
+        width: 20px;
+        height: 20px;
+        background-color:yellow;
+        border-radius: 50%;
+        animation: wave 0.25s 2s 4 alternate;
+        transition-timing-function: ease-in;
+        }
+        .b4{
+        width: 20px;
+        height: 20px;
+        background-color:green;
+        border-radius: 50%;
+        animation: wave 0.26s 2s 4 alternate;
+        transition-timing-function: ease-in;
+        }
+        @keyframes  wave{
+        0%{
+          transform: translateX(0px) translateY(0px);
+        }
+        25%{
+          transform: translateX(0px) translateY(20px);
+        }
+        50%{
+          transform: translateX(0px) translateY(30px);
+        }
+        75%{
+          transform: translateX(0px) translateY(40px);
+        }
+        100%{
+          transform: translateX(0px) translateY(50px);
+        }
+    }
+    </style>
+</head>
+<body>
+    <h1>Google</h1><hr>
+    <div class="google">
+    <div class="b1"></div>&nbsp;&nbsp;
+    <div class="b2"></div>&nbsp;&nbsp;
+    <div class="b3"></div>&nbsp;&nbsp;
+    <div class="b4"></div>
+    </div>
+  </body>
+</html>

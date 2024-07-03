@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            align-items: center;
+            position: relative;
+            height: 60vh;
+            background-image: url("https://as2.ftcdn.net/v2/jpg/02/65/43/25/1000_F_265432505_XAidmziPWF68kddaY99RNzeqvWvq8baV.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: palevioletred;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+        .id1{
+            width: 40px;
+            height: 200px;
+            left: 600px;
+            position: absolute;
+            bottom: 30px;
+            background-color: rgb(250,130,223);
+            animation: changecolor 0.3s 2s infinite alternate;
+            transition-timing-function: linear;
+        }
+        .id2{
+            width: 40px;
+            height: 200px;
+            left: 650px;
+            position: absolute;
+            bottom: 30px;
+            background-color: rgb(232,110,241);
+            animation: changecolor 0.25s 2s infinite alternate;
+            transition-timing-function: linear;
+        }
+        .id3{
+            width: 40px;
+            height: 200px;
+            left: 700px;
+            position: absolute;
+            bottom: 30px;
+            background-color: rgb(255,120,220);
+            animation: changecolor 0.5s 2s infinite alternate;
+            transition-timing-function: linear;
+        }
+        .id4{
+            width: 40px;
+            height: 200px;
+            left: 750px;
+            position: absolute;
+            bottom: 30px;
+            background-color: rgb(242,128,250);
+            animation: changecolor 0.3s 2s infinite alternate;
+            transition-timing-function: linear;
+        }
+        @keyframes changecolor {
+            0%{
+                height: 100px;
+            }
+            25%{
+               height: 150px;
+            }
+            50%{
+                height: 200px;
+            }
+            75%{
+                height: 250px;
+            }
+            100%{
+                height: 300px;
+            }
+        }
+</style>
+</head>
+<body align="center">
+    <h1>MUSIC</h1>
+    <div class="container">
+        <div class="id1"></div>&nbsp;&nbsp;
+        <div class="id2"></div>&nbsp;&nbsp;
+        <div class="id3"></div>&nbsp;&nbsp;
+        <div class="id4"></div>&nbsp;&nbsp;
+    </div>
+</body>
+</html>
